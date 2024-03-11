@@ -32,14 +32,14 @@ class PersonFollower(Node):
 
     def listener_callback(self, msg):
         ranges = msg.ranges
-        detection_zone = ranges[144:215]
+        detection_zone = ranges[135:224]
 
         vx = 0.0
         wz = 0.0
 
         min_distance = 0.6
         max_distance = 1.4
-        forward_speed = 0.2
+        forward_speed = 0.25
         rotation_speed = 0.3
         slope_index = 26
 
